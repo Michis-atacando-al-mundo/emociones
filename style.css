@@ -1,0 +1,44 @@
+body{
+    background-image: linear-gradient(270deg, #4d7945 0, #427a4c 3.33%, #367b53 6.67%, #287c5b 10%, #147d63 13.33%, #007d6b 16.67%, #007e73 20%, #007e7c 23.33%, #007d83 26.67%, #007d8b 30%, #007c92 33.33%, #007b98 36.67%, #007a9e 40%, #0079a2 43.33%, #0077a6 46.67%, #1475a8 50%, #3073a9 53.33%, #4370a9 56.67%, #536da8 60%, #616ba6 63.33%, #6d67a3 66.67%, #78649f 70%, #826199 73.33%, #8b5e93 76.67%, #935c8d 80%, #995985 83.33%, #9e577e 86.67%, #a25676 90%, #a5566e 93.33%, #a65666 96.67%, #a7565e 100%);
+}
+h3{
+    background-color: rgb(18, 243, 82);
+}
+span
+{
+    font-size: 30px;
+}
+#camara , #result
+{
+    border: 5px dashed rgb(240, 146, 4);
+    width: 350px;
+    height: 300px;
+    background-color: #007d8b;
+}
+
+#result_emotion_name ,#result_emotion_name2
+{
+color: black
+} 
+
+.emotion_name
+{
+    font-size: 40px;
+}
+label
+{
+    font-size: 14px;
+    color: rgb(95, 221, 95);
+    padding: 6px;
+    border-radius: 10px;
+background-color: white;    
+}
+button{
+    background-color: rgb(179, 255, 0);
+    font-family:'Bungee Spice';
+    font-size: 22px;
+    width: 300px;
+    height: 50px;
+    border-color: white;
+    border-radius: 50px;
+}

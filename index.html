@@ -1,0 +1,72 @@
+ 
+<html>
+    <head>
+      <title>Emoción a emoji</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Foldit:wght@100&family=Nanum+Pen+Script&family=Noto+Sans+JP:wght@100&family=Rubik+Pixels&family=Shadows+Into+Light&family=Sigmar+One&display=swap" rel="stylesheet">
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+   <div class="container">
+
+    <center>
+     <h3 class="btn bnt-warning heading">TUS EMOCIONES SEGUN EL EMOJI
+      <br>
+      <span>&#128522;</span>
+      <span>&#128512;</span>
+      <span>&#128532;</span>
+      <span>&#128546;</span>
+      <span>&#128545;</span>
+      <span>&#128548;</span>
+     </h3> 
+     <br><br>
+     <p style="color: rgb(88, 160, 255);font-size: 32px; font-family:'Bungee Spice', cursive;">Toma UNA FOTO
+     <br >
+     <b style="color: rgb(252, 252, 122); font-size: 22px; font-family:'Bungee Spice', cursive;">Estas feliz???</b>
+     <br>
+     <b style="color: rgb(48, 197, 235); font-size: 22px; font-family:'Bungee Spice', cursive;">Estas triste???</b>
+     <br>
+     <b style="color: rgb(218, 26, 26); font-size: 22px; font-family:'Bungee Spice', cursive;">Estas enojado???</b>
+    </p>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+<label style="color: rgb(251, 251, 251); font-size: 22px; font-family:'Bungee Spice', cursive;"> Vista de Camara</label>
+<div id="camara"></div>
+<br><br>
+<button onclick="take_snapshot()" >Tomar Captura</button>
+    
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+<label style="color: rgb(251, 251, 251); font-size: 22px; font-family:'Bungee Spice', cursive;">Predicción 1</label>
+<p class="emotion_name" id="result_emotion_name"> </p>
+<p class="emoji" id="update_emoji"></p>
+
+<label style="color: rgb(251, 251, 251);font-size: 22px;font-family:'Bungee Spice', cursive;">Predicción 2</label>
+<p class="emotion_name" id="result_emotion_name2"> </p>
+<p class="emoji" id="update_emoji2"></p>
+    </div>
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <label style="color: rgb(251, 251, 251);font-size: 22px;font-family:'Bungee Spice', cursive;"> Instantanea</label>
+      <div id="result"></div>
+      <br><br>
+      <button onclick="check()" > Verificar</button>
+          
+          </div>
+    </center>
+   </div>
+  
+   
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   
